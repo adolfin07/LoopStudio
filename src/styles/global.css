@@ -2,4 +2,10 @@
 
 * {
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.hiddenNav{
+    left: -105%;
 }

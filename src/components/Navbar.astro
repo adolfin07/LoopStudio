@@ -1,10 +1,24 @@
-<nav class="flex flex-row justify-between items-center py-6 px-5
-fixed w-full z-40">
-    <div class="nav__left">
-        <span class="text-2xl font-semibold text-white ">loppstudios</span>
+<nav
+    class="flex flex-row justify-between items-center py-6 px-5
+fixed w-full z-40 bg-black/40"
+>
+    <div class="nav__left relative z-50">
+        <span class="text-2xl font-semibold text-white">loppstudios</span>
     </div>
-    <div class="nav__right">
-        <button class="">
+    <ul
+        id="responsiveNav"
+        class="left-0 top-0 absolute w-full bg-black text-white h-screen
+     uppercase text-xl pl-5 flex flex-col justify-center gap-6 font-light duration-250
+     hiddenNav"
+    >
+        <li><a href="#compo1">about</a></li>
+        <li><a href="#compo2">careers</a></li>
+        <li><a href="#compo3">events</a></li>
+        <li><a href="#compo4">products</a></li>
+        <li><a href="#">support</a></li>
+    </ul>
+    <div class="nav__right relative z-50">
+        <button id="openNav" class="">
             <i class="fa-solid fa-bars-staggered text-2xl text-white"></i>
         </button>
     </div>
