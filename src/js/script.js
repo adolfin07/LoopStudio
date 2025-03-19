@@ -15,4 +15,22 @@ responsiveNavAll.forEach(link => {
 
 });
 
+function changeClass() {
+    if (window.innerWidth >= 1024) {
+        responsiveNav.classList.remove("hiddenNav");
+
+        responsiveNavAll.forEach(link => {
+
+            link.addEventListener("click", () => {
+                responsiveNav.classList.remove("hiddenNav");
+            });
+
+        });
+
+
+    }
+}
+
+
+changeClass();
 
