@@ -1,12 +1,24 @@
 <header class="relative" id="compo1">
     <div
         class="header__txt absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
-    text-4xl text-white uppercase font-light border-2 border-white py-6 px-9"
+    text-4xl text-white uppercase font-light border-2 border-white py-6 px-9 z-10
+    lg:left-70 lg:transform-none lg:h-45 lg:w-100
+    2xl:h-60 2xl:w-130"
     >
-        <h2>immersive experiences that deliver</h2>
+        <h2 class="2xl:text-6xl">immersive experiences that deliver</h2>
     </div>
 
     <picture>
-        <img class="" src="/images/mobile/image-hero.jpg" alt="" />
+        <source
+            srcset="/images/desktop/image-hero.jpg"
+            media="(min-width: 768px)"
+        />
+
+        <img class="2xl:w-full" src="/images/mobile/image-hero.jpg" alt="" />
     </picture>
+
+    <div
+        class="absolute inset-0 bg-gradient-to-r z-5 from-black/80 to-transparent"
+    >
+    </div>
 </header>
